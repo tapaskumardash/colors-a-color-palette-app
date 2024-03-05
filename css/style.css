@@ -1,0 +1,120 @@
+/* ---- Font Families ---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ---- Universal Selectors ---- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 60px;
+}
+
+body{
+    background-color: #f7fbff;
+}
+
+.container{
+    padding: 0 10px;
+    margin-bottom: 60px;
+}
+
+.text-highlight{
+    color: #FF0096 !important;
+}
+
+.hover-pink:hover{
+    background-color: #ff4d91 !important;
+    color: #f7fbff !important;
+}
+
+.hover-black:hover{
+    background-color: #1a1a1a !important;
+    color: #f7fbff !important;
+}
+
+/* ---- Navigation Bar ---- */
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #f7fbff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
+}
+
+nav span a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Pacifico, serif;
+    color: #ff4d91;
+}
+
+.navigation-link-container li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #000000;
+}
+
+#login-button{
+    padding: 7px 20px;
+    border: none;
+    background-color: #ff4d91;
+    color: #f7fbff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bx-menu, .bx-x{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 700px){
+    .navigation-link-container{
+        width: 100%;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #f7fbff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px;
+        display: none;
+    }
+
+    .navigation-link-container-active{
+        display: flex;
+    }
+
+    .navigation-link-container li{
+        display: block;
+        margin: 0;
+    }
+
+    #login-button{
+        width: 150px;
+    }
+
+    #menu-open-icon{
+        display: block;
+    }
+}

@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Color Pallet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Color Pallet</title>
 </head>
 <body>
-<nav>
-    <span><a href="#">colors</a></span>
-    <ul class="navigation-link-container">
-        <li><a href="#" class="nav-links">Home</a></li>
-        <li><a href="#" class="nav-links">About</a></li>
-        <li><a href="#" class="nav-links">Contact</a></li>
-        <li><a href="#pricing" class="nav-links text-highlight">Go Pro</a></li>
-        <button id="login-button" class="hover-black">Login</button>
-    </ul>
-    <i class='bx bx-menu' id="menu-open-icon"></i>
-</nav>
+	<nav>
+		<span><a href="#">colors</a></span>
+		<ul class="navigation-link-container">
+			<li><a href="#" class="nav-links">Home</a></li>
+			<li><a href="#" class="nav-links">About</a></li>
+			<li><a href="#" class="nav-links">Contact</a></li>
+			<li><a href="#" class="nav-links text-highlight">Go Pro</a></li>
+			<button id="login-button" class="hover-black">Login</button>
+		</ul>
+		<i class='bx bx-menu' id="menu-open-icon"></i>
+	</nav>
 
-<script src="js/index.js"></script>
+	<section class="hero">
+		<div class="hero-left">
+			<h1>The super fast color palettes generator!</h1>
+			<p>Create the perfect palette or get inspired by thousands of beautiful color schemes.</p>
+			<div class="hero-btn-container">
+				<a href="generate.html" class="hero-left-button generate-button">Start the generator!</a>
+				<a href="#trending" class="hero-left-button trending-button">Explore trending palettes</a>
+			</div>
+		</div>
+		<div class="hero-right">
+			<div class="hero-palette-screen">
+				<div class="hero-color-palette"></div>
+				<div class="hero-color-palette"></div>
+				<div class="hero-color-palette"></div>
+				<div class="hero-color-palette"></div>
+				<div class="hero-color-palette"></div>
+			</div>
+			<div class="hero-palette-scrren-buttom"></div>
+		</div>
+	</section>
+
+	<script src="js/index.js"></script>
 </body>
 </html>

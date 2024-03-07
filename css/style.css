@@ -18,6 +18,27 @@ body{
 	background-color: #f7fbff;
 }
 
+.container{
+	padding: 0 10px;
+	margin-bottom: 60px;
+}
+
+.sub-heading{
+	color: #1a1a1a;
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.sub-heading-para{
+	color: #616161;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	width: 400px;
+	line-height: 1.5;
+}
+
 .text-highlight{
 	color: #FF0096 !important;
 }
@@ -177,7 +198,82 @@ nav span a{
 	border-bottom-right-radius: 10px;
 }
 
+/* ---- Trending Section ---- */
+
+.trending{
+	width: 100%;
+}
+
+.trending-palette-container{
+	width: 100%;
+	padding: 0 40px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	gap: 40px;
+	justify-content: space-evenly;
+}
+
+.trending-palette-box{
+	width: 400px;
+	height: 150px;
+	display: flex;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.trending-palette{
+	flex-basis: 20%;
+	height: 100%;
+	transition: 0.2s;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.trending-palette:hover{
+	flex-basis: 50%;
+}
+
+.trending-palette:hover > .trending-palette-code{
+	display: block;
+}
+
+.trending-palette-code{
+	color: #000;
+	align-self: center;
+	cursor: pointer;
+	display: none;
+	font-weight: 500;
+}
+
+.trending-palette-code i{
+	font-size: 30px;
+}
+
 /* ==================================== Responsive ==================================== */
+
+/* ---- Universal ---- */
+
+@media(max-width: 420px){
+	.sub-heading{
+		margin-bottom: 20px;
+	}
+
+	.sub-heading-para{
+		width: 90%;
+	}
+}
+
+@media(max-width: 600px){
+	.sub-heading{
+		font-size: 30px;
+	}
+
+	.sub-heading-para{
+		font-size: 18px;
+	}
+}
 
 /* ---- Navigation Bar ---- */
 
@@ -297,5 +393,18 @@ nav span a{
 
 	.hero-palette-scrren-buttom{
 		width: 100%;
+	}
+}
+
+/* ---- Trending Section ---- */
+
+@media(max-width: 600px){
+	.trending-palette-container{
+		padding: 0 10px;
+	}
+
+	.trending-palette-box{
+		width: 90%;
+		height: 130px;
 	}
 }

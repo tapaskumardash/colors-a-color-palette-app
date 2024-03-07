@@ -35,3 +35,45 @@ heroColorPalettes.forEach(heroRandomColorGenerator);
 setInterval(() => {
 	heroColorPalettes.forEach(heroRandomColorGenerator);
 }, 500);
+
+
+/* ---- Trending Section ---- */
+
+const trendingPalettes = document.querySelectorAll(".trending-palette");
+
+const checkBrightness = (haxCode) => {
+	const hex = haxCode.substring(1); // removing # from hex code
+    const rgb = parseInt(hex, 16); // convert rrggbb to decimal
+    const r = (rgb >> 16) & 0xff; // extract red
+    const g = (rgb >>  8) & 0xff; // extract green
+    const b = (rgb >>  0) & 0xff; // extract blue
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000; // algorithm to calculate brightness
+
+    // Setting text color based on brightness
+    if (brightness > 125) {
+		return false;
+    } else {
+		return true;
+    }
+}
+
+const applyHaxCode = (item) => {
+	const haxCode = item.getAttribute("style").slice(18, 25).toUpperCase();
+	item.children[0].innerText = haxCode;
+
+	const bgColorFlag = checkBrightness(haxCode);
+
+	if(bgColorFlag){
+		item.children[0].style.color = "#FFF";
+	}
+
+	item.children[0].addEventListener("click", () => {
+		navigator.clipboard.writeText(haxCode);
+		item.children[0].innerHTML = "<i class='bx bx-check'></i>";
+		setTimeout(() => {
+			item.children[0].innerText = haxCode;
+		}, 2000);
+	})
+}
+
+trendingPalettes.forEach(applyHaxCode);

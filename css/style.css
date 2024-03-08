@@ -23,6 +23,10 @@ body{
 	margin-bottom: 60px;
 }
 
+.text-highlight{
+	color: #FF0096 !important;
+}
+
 .sub-heading{
 	color: #1a1a1a;
 	font-size: 42px;
@@ -37,10 +41,6 @@ body{
 	font-size: 20px;
 	width: 400px;
 	line-height: 1.5;
-}
-
-.text-highlight{
-	color: #FF0096 !important;
 }
 
 .hover-pink:hover{
@@ -251,9 +251,141 @@ nav span a{
 	font-size: 30px;
 }
 
-/* ==================================== Responsive ==================================== */
+/* ---- Pricing Section ---- */
 
-/* ---- Universal ---- */
+.pricing{
+	width: 100%;
+	padding: 0 20px;
+}
+
+.pricing-box-container{
+	width: max-content;
+	margin: 30px auto 0 auto;
+	display: flex;
+	gap: 20px;
+}
+
+.pricing-box{
+	border: 2px solid #C9C8CC;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 300px;
+	transition: 0.2s;
+}
+
+.pricing-box:hover{
+	border: 2px solid #ffb9d4;
+}
+
+.pricing-head{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
+	gap: 5px;
+}
+
+.pricing-head h3{
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.pricing-head p{
+	font-size: 18px;
+	color: #333;
+}
+
+.pricing-body{
+	padding: 20px;
+}
+
+.pricing-body ul li{
+	list-style: none;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.pricing-body ul li i{
+	margin-right: 5px;
+}
+
+.price-red{
+	color: red;
+}
+
+.price-green{
+	color: green;
+}
+
+.pricing-button-container{
+	padding: 0 10px 10px 10px;
+	width: 100%;
+}
+
+.pricing-button-container a{
+	padding: 10px 10px;
+	display: block;
+	border-radius: 6px;
+	width: 100%;
+	text-decoration: none;
+	color: #f7fbff;
+	text-align: center;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.free-button{
+	color: #1a1a1a !important;
+	background-color: #C9C8CC;
+}
+
+.go-pro-button{
+	background-color: #ff4d91;
+}
+
+/* ---- Footer ---- */
+
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #e6e6e6;
+	padding: 40px 20px;
+}
+
+.footer-container{
+	margin-bottom: 20px;
+	display: flex;
+	gap: 40px;
+}
+
+.footer-icons-container a{
+	color: #616161;
+	font-size: 30px;
+	transition: 0.2s;
+}
+
+.footer-icons-container a:hover{
+	color: #ff4d91;
+}
+
+.footer-links-container a{
+	color: #333;
+	text-decoration: none;
+}
+
+.footer-copyright span{
+	font-size: 14px;
+	color: #717171;
+}
+
+/* ==================================== Responsive ==================================== */
 
 @media(max-width: 420px){
 	.sub-heading{
@@ -408,3 +540,20 @@ nav span a{
 		height: 130px;
 	}
 }
+
+/* ---- Pricing Section ---- */
+
+@media(max-width: 672px){
+	.pricing-box-container{
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.pricing-box{
+		width: 100%;
+	}
+}
+
+/* ---- Footer ---- */
+
+/* You can also do it. I am not doing this because it is alright. */

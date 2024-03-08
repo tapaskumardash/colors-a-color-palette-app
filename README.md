@@ -5,3 +5,4 @@
 **Day-1 (5th Mar 2024):** Completed the navigation bar.<br>
 **Day-2 (6th Mar 2024):** Completed the hero section.<br>
 **Day-3 (7th Mar 2024):** Completed the trending section of the color palette app.<br>
+**Day-4 (8th Mar 2024):** Completed the pricing and footer section.<br>

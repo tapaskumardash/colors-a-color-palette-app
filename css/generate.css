@@ -1,0 +1,232 @@
+/* ---- Font Families ---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ---- Universal Selectors ---- */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Rubik, Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+	scroll-margin-top: 60px;
+	user-select: none;
+}
+
+body {
+	background-color: #f7fbff;
+}
+
+.text-highlight {
+	color: #FF0096 !important;
+}
+
+.hover-pink:hover {
+	background-color: #ff4d91 !important;
+	color: #f7fbff !important;
+}
+
+.hover-black:hover {
+	background-color: #1a1a1a !important;
+	color: #f7fbff !important;
+}
+
+/* ---- Navigation Bar ---- */
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #f7fbff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px;
+	box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
+	border-bottom: 1px solid #bfbfbf;
+	z-index: 99;
+}
+
+nav span a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Pacifico;
+	color: #ff4d91;
+}
+
+.navigation-link-container li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: #000000;
+}
+
+#login-button {
+	padding: 7px 20px;
+	border: none;
+	background-color: #ff4d91;
+	color: #f7fbff;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.bx-menu,
+.bx-x {
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+/* ---- Tool Bar ---- */
+
+.tool-bar {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 20px;
+	box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
+	background-color: #f7fbff;
+	z-index: 9;
+}
+
+.tool-bar span {
+	color: #616161;
+}
+
+.tool-bar-buttons button {
+	padding: 6px 10px;
+	border: 1px solid #bfbfbf;
+	border-radius: 6px;
+	background-color: #f7fbff;
+	margin-right: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.tool-bar-buttons button:hover {
+	border: 1px solid #838383;
+}
+
+/* ---- Palette Container ---- */
+
+.palette-container {
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	display: flex;
+}
+
+.palettes {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 100px 10px 0 10px;
+	transition: 0.3s;
+}
+
+.palettes i {
+	font-size: 20px;
+	display: none;
+	font-size: 30px;
+	position: absolute;
+	top: 120px;
+	right: 20px;
+	background-color: #f7fbff;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0 1px 4px;
+}
+
+.palettes span {
+	font-weight: 500;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.palettes:hover>i {
+	display: block;
+}
+
+/* ==================================== Responsive ==================================== */
+
+
+/* ---- Navigation Bar ---- */
+
+@media(max-width: 700px) {
+	.navigation-link-container {
+		width: 100%;
+		position: fixed;
+		top: 50px;
+		left: 0;
+		background-color: #f7fbff;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		display: none;
+		box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px;
+	}
+
+	.navigation-link-container-active {
+		display: flex;
+	}
+
+	.navigation-link-container li {
+		display: block;
+		margin: 0;
+	}
+
+	#login-button {
+		width: 150px;
+	}
+
+	#menu-open-icon {
+		display: block;
+	}
+}
+
+/* ---- Tool Bar ---- */
+
+@media (max-width: 750px) {
+	.tool-bar span {
+		display: none;
+	}
+}
+
+/* ---- Palette Container ---- */
+
+@media (max-width: 768px) {
+	.palette-container {
+		padding: 100px 0 0 0;
+		flex-direction: column;
+	}
+
+	.palettes {
+		padding: 40px 10px;
+	}
+
+	.palettes i {
+		top: 10px;
+		right: 10px;
+		display: block;
+		font-size: 20px;
+	}
+}
+

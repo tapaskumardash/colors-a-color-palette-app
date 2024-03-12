@@ -9,4 +9,4 @@
 **Day-5 (9th Mar 2024):** Completed the UI part of generate app.<br>
 **Day-6 (10th Mar 2024):** The project is finally completed!<br><br><br>
 
-**Try it out:** <a href="https://tapaskumardash.xyz/projects/colors/">Click here!</a>
+**Try it out:** <a href="https://tapaskumardash.xyz/projects/colors/" target="_blank">Click here!</a>

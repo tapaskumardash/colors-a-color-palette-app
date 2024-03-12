@@ -7,3 +7,6 @@
 **Day-3 (7th Mar 2024):** Completed the trending section of the color palette app.<br>
 **Day-4 (8th Mar 2024):** Completed the pricing and footer section.<br>
 **Day-5 (9th Mar 2024):** Completed the UI part of generate app.<br>
+**Day-6 (10th Mar 2024):** The project is finally completed!<br><br><br>
+
+**Try it out:** <a href="https://tapaskumardash.xyz/projects/colors/">Click here!</a>

@@ -162,6 +162,34 @@ nav span a {
 	display: block;
 }
 
+
+/* ---- Popup ---- */
+
+#copied-popup{
+	position: fixed;
+	bottom: 40px;
+	left: -100%;
+	background-color: #1a1a1a;
+	padding: 10px 20px;
+	border-radius: 20px;
+	transition: 0.6s;
+}
+
+.active-copied-popup{
+	left: 40px !important;
+}
+
+#copied-popup span{
+	color: #f7fbff;
+	display: flex;
+	align-items: center;
+}
+
+#copied-popup i{
+	margin: 0 5px 0 0;
+}
+
+
 /* ==================================== Responsive ==================================== */
 
 
@@ -227,6 +255,19 @@ nav span a {
 		right: 10px;
 		display: block;
 		font-size: 20px;
+	}
+}
+
+/* ---- Popup ---- */
+
+
+@media (max-width: 750px) {
+	#copied-popup{
+		bottom: 20px;
+	}
+
+	.active-copied-popup{
+		left: 20px !important;
 	}
 }
 

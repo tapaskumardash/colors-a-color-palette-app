@@ -1,12 +1,9 @@
-# colors-a-color-palette-app
-"colors" is a versatile palette app catering to designers and developers. Seamlessly select colors for projects with a user-friendly interface, empowering creativity and efficiency in color choice.
+# Color Pallet
 
-# Timeline --
-**Day-1 (5th Mar 2024):** Completed the navigation bar.<br>
-**Day-2 (6th Mar 2024):** Completed the hero section.<br>
-**Day-3 (7th Mar 2024):** Completed the trending section of the color palette app.<br>
-**Day-4 (8th Mar 2024):** Completed the pricing and footer section.<br>
-**Day-5 (9th Mar 2024):** Completed the UI part of generate app.<br>
-**Day-6 (10th Mar 2024):** The project is finally completed!<br><br><br>
+Color Pallet is a super fast color palette generator inspired by [Coolors.co](https://coolors.co). It allows users to create the perfect color palette or get inspired by thousands of beautiful color schemes. This app provides a seamless experience for generating and exploring color palettes with a sleek and intuitive interface.
 
-**Try it out:** <a href="https://tapaskumardash.xyz/projects/colors/">Click here!</a>
+## Features
+
+- **Generate Palettes**: Create color palettes instantly with the palette generator.
+- **Explore Trending Palettes**: Get inspired by thousands of trending color schemes.
+- **Pro Features**: Upgrade to the Pro plan to enjoy an ad-free experience, unlimited palette generation, and palette history.
